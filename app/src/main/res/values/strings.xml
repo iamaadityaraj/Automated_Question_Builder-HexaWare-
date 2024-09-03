@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Brain Wave</string>
+    <string name="welcome_text">Welcome</string>
+    <string name="sign_Up">Sign up</string>
+    <string name="already_account">Already have an account ?</string>
+    <string name="login_here">login here</string>
+    <string name="Name_hint">Name</string>
+    <string name="username_hint">Username</string>
+    <string name="Email_hint">Email id </string>
+    <string name="phone_number_hint">Phone number</string>
+    <string name="password_hint">Password</string>
+    <string name="login">login</string>
+    <string name="sign_up_here">sign up here</string>
+    <string name="dont_have_account">You don,t have an account ?</string>
+    <string name="C_Programming">C-Programming</string>
+
+</resources>

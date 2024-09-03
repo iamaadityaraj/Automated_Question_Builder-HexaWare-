@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_screen"
+    tools:context=".views.SignUpActivity">
+
+    <TextView
+        android:id="@+id/signu_page_appName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:fontFamily="@font/itim"
+        android:text="@string/app_name"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/signup_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="128dp"
+        android:fontFamily="@font/itim"
+        android:text="@string/sign_Up"
+        android:textColor="@color/black"
+        android:textSize="32sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="319dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="116dp"
+        android:autofillHints="name"
+        android:background="@drawable/edit_text_background"
+        android:hint="@string/Name_hint"
+        android:inputType="textPersonName"
+        android:fontFamily="@font/itim"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signu_page_appName" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="319dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="16dp"
+        android:autofillHints="username"
+        android:background="@drawable/edit_text_background"
+        android:hint="@string/username_hint"
+        android:inputType="text"
+        android:fontFamily="@font/itim"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
+
+    <EditText
+        android:id="@+id/email_id"
+        android:layout_width="319dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="16dp"
+        android:autofillHints="emailAddress"
+        android:background="@drawable/edit_text_background"
+        android:hint="@string/Email_hint"
+        android:inputType="textEmailAddress"
+        android:fontFamily="@font/itim"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/username" />
+
+    <EditText
+        android:id="@+id/phone_number"
+        android:layout_width="319dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="16dp"
+        android:autofillHints="phone"
+        android:background="@drawable/edit_text_background"
+        android:hint="@string/phone_number_hint"
+        android:inputType="textPhonetic"
+        android:maxLength="10"
+        android:fontFamily="@font/itim"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email_id" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="319dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="16dp"
+        android:autofillHints="password"
+        android:background="@drawable/edit_text_background"
+        android:hint="@string/password_hint"
+        android:inputType="textPassword"
+        android:fontFamily="@font/itim"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phone_number" />
+
+    <Button
+        android:id="@+id/signip_page_signUp_btn"
+        android:layout_width="218dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@color/dark_blue"
+        android:fontFamily="@font/itim"
+        android:padding="10dp"
+        android:text="@string/sign_Up"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password" />
+
+    <TextView
+        android:id="@+id/signup_page_alerady_account_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/istok_web"
+        android:text="@string/already_account"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signip_page_signUp_btn" />
+
+    <Button
+        android:id="@+id/signup_page_login_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/istok_web"
+        android:text="@string/login_here"
+        android:textAllCaps="false"
+        android:textColor="@color/dark_blue"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/signup_page_alerady_account_text"
+        app:layout_constraintTop_toBottomOf="@+id/signip_page_signUp_btn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
